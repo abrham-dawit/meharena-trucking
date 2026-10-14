@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meharena Trucking — Freight, Delivered Right</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <p class="eyebrow">Meharena Trucking</p>
+  <h1>Your freight, moved like it's our own.</h1>
+  <p class="sub">Reliable dry-van trucking for businesses that can't afford surprises. One call, a real person, and a truck that shows up when we say it will.</p>
+  <a class="btn" href="#quote">Get a quote</a>
+</header>
+
+<main>
+  <section class="services">
+    <h2 class="section-title">What we haul</h2>
+    <div class="cards">
+      <article class="card"><h3>🚛 Full Truckload (FTL)</h3><p>Dry-van full loads, dock to dock. Best for palletized freight that fills a trailer and needs to move on your schedule.</p></article>
+      <article class="card"><h3>📦 Partial &amp; LTL</h3><p>Smaller load? We run partials and less-than-truckload freight so you only pay for the space you use.</p></article>
+      <article class="card"><h3>🗓️ Dedicated Lanes</h3><p>Same route, every week. We learn your freight, your docks, and your timing — and we staff the lane like clockwork.</p></article>
+      <article class="card"><h3>⚡ Expedited</h3><p>When a line is down or a customer is waiting, call us. We'll tell you straight whether we can make the time — and if we say yes, we make it.</p></article>
+    </div>
+  </section>
+
+  <section class="area">
+    <h2 class="section-title">Service area</h2>
+    <!-- EDIT ME: adjust the service area text to the lanes the company actually runs. -->
+    <p class="area-text">Based in California and running the West Coast daily — with long-haul coverage across the continental U.S. for established customers. <span class="placeholder">[Edit this line to match the exact lanes and home base.]</span></p>
+    <div class="stats">
+      <div><strong>On-time</strong><span>pickup &amp; delivery focus</span></div>
+      <div><strong>One call</strong><span>no phone-tree runaround</span></div>
+      <div><strong>Live updates</strong><span>you always know where your load is</span></div>
+    </div>
+  </section>
+
+  <section class="why">
+    <h2 class="section-title">Why shippers stay with us</h2>
+    <ul>
+      <li><strong>We answer.</strong> A person who knows your load picks up the phone — not a call center.</li>
+      <li><strong>We say it straight.</strong> If a time doesn't work, you hear it from us early, with a plan B.</li>
+      <li><strong>We treat freight like it's ours.</strong> Careful loading, checked securement, clean equipment.</li>
+    </ul>
+  </section>
+
+  <section id="quote" class="quote">
+    <h2 class="section-title">Request a quote</h2>
+    <p class="muted">Tell us about the load. This demo form shows you a summary of your request right here — connect it to the company's email or dispatch system to receive requests for real.</p>
+    <form id="quoteForm" novalidate>
+      <div class="row">
+        <label>Your name<input required name="name" type="text" placeholder="Full name"></label>
+        <label>Company<input name="company" type="text" placeholder="Company (optional)"></label>
+      </div>
+      <div class="row">
+        <label>Email<input required name="email" type="email" placeholder="you@company.com"></label>
+        <label>Phone<input name="phone" type="tel" placeholder="(555) 555-5555"></label>
+      </div>
+      <div class="row">
+        <label>Pickup city &amp; state<input required name="pickup" type="text" placeholder="e.g. Oakland, CA"></label>
+        <label>Delivery city &amp; state<input required name="dropoff" type="text" placeholder="e.g. Reno, NV"></label>
+      </div>
+      <div class="row">
+        <label>Pickup date<input name="date" type="date"></label>
+        <label>Weight (lbs)<input name="weight" type="number" min="0" placeholder="e.g. 24000"></label>
+      </div>
+      <label>What are we hauling?
+        <textarea name="freight" rows="3" placeholder="Pallets, boxes, equipment — and anything we should know (stackable, fragile, dock hours…)"></textarea>
+      </label>
+      <button class="btn" type="submit">Request my quote</button>
+      <p id="formError" class="error" hidden>Please fill in your name, a valid email, and the pickup and delivery cities.</p>
+    </form>
+    <div id="quoteResult" class="result" hidden></div>
+  </section>
+
+  <section class="contact">
+    <h2 class="section-title">Talk to dispatch</h2>
+    <!-- EDIT ME: replace with the real phone and email. -->
+    <p class="placeholder">[Placeholder phone — replace with the dispatch number]</p>
+    <p class="placeholder">[Placeholder email — replace with the real address]</p>
+  </section>
+</main>
+
+<footer>
+  <p>© Meharena Trucking. All rights reserved.</p>
+  <p class="tagline">Be loyal to your future, not your past.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
